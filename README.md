@@ -32,7 +32,7 @@ A GET request to the product/{id} endpoint will return a response like:
 ```
 
 A PUT request to the product/{id} endpoint requires the same format as what the GET endpoint returns above.
-A POSTMAN collection has be created and can be imported into postman. Filename in the root dir: targetRecruitingMyRetail.postman_collection.json
+A POSTMAN collection has be created and can be imported into postman. Filename in the root dir:   targetRecruitingMyRetail.postman_collection.json
 
 ## Logs
 Logs are collected for requests and sent to standard out.
