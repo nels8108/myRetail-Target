@@ -44,6 +44,5 @@ Otherwise, tests can be run using maven from command line from the root director
 This application is not secure.  It does not rate limit, or require an API key to access.  
 The application is designed to return as much information as possible, and not fail entirely if one part of the requested data is not available.    
 Therefore it is important to know you may receive partial data.  
-This project uses spring boot, and the management/actuator endpoints are available.  
+This project uses spring boot, and the management/actuator endpoints are available.  More can be read [here](https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html) about these endpoints.  
 The API endpoints are not versioned, so you can expect them to stay the same and have no breaking changes.  
-More can be read [here](https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html) about these endpoints.  
