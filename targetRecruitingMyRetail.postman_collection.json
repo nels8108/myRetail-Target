@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "9b486310-4583-45f5-85b5-2001f1ad0384",
+		"name": "targetRecruitingMyRetail",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getRedskyProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://redsky.target.com/v2/pdp/tcin/13860428?excludes=taxonomy,price,promotion,bulk_ship,rating_and_review_reviews,rating_and_review_statistics,question_answer_statistics",
+					"protocol": "https",
+					"host": [
+						"redsky",
+						"target",
+						"com"
+					],
+					"path": [
+						"v2",
+						"pdp",
+						"tcin",
+						"13860428"
+					],
+					"query": [
+						{
+							"key": "excludes",
+							"value": "taxonomy,price,promotion,bulk_ship,rating_and_review_reviews,rating_and_review_statistics,question_answer_statistics"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getLocalHostProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/product/13860428",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"product",
+						"13860428"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT productPrice",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 13860429,\n    \"name\": \"Tons of Goo\",\n    \"current_price\": {\n        \"value\": 13.99,\n        \"currency_code\": \"USD\"\n    }\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/product/13860429",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"product",
+						"13860429"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
